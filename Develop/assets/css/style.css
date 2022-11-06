@@ -131,7 +131,7 @@ footer p {
     font-size: 12px;
 }
 
-/* Media Query Below */
+/* Media Queries Below */
 
 @media screen and (max-width: 1050px) {
     header {
@@ -243,4 +243,36 @@ footer p {
         text-align: center;
     }
 
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding-bottom: 10px !important;
+    }
+
+    .drop-down-navigation {
+        display: block;
+        margin: 10px 3px 0px;
+        height: 40px;
+        width: 100%;
+        background: url(../images/menu-icon.png) no-repeat;
+        background-size: 7%;
+        background-color: #2a607c;
+        cursor: pointer;
+    }
+
+    ul {
+        overflow: hidden;
+        background-color: #2a607c;
+        height: 0px;
+    }
+
+    ul.open {
+        height: auto;
+        margin-top: 15px;
+    }
+
+    header.open {
+        padding-bottom: 90px !important;
+    }
 }
